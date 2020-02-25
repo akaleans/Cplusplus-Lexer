@@ -1,0 +1,36 @@
+TOKENS                               LEXEMES
+
+IDENTIFIER          =                   
+KEYWORD             =                   int
+IDENTIFIER          =                   exponent
+OPERATOR            =                   =
+REAL                =                   0
+SEPARATOR           =                   ;
+KEYWORD             =                   float
+IDENTIFIER          =                   base
+SEPARATOR           =                   ,
+IDENTIFIER          =                   result
+OPERATOR            =                   =
+REAL                =                   1
+SEPARATOR           =                   ;
+KEYWORD             =                   while
+SEPARATOR           =                   (
+IDENTIFIER          =                   exponent
+OPERATOR            =                   >
+OPERATOR            =                   =
+REAL                =                   1
+SEPARATOR           =                   )
+SEPARATOR           =                   {
+IDENTIFIER          =                   result
+OPERATOR            =                   *
+OPERATOR            =                   =
+IDENTIFIER          =                   base
+SEPARATOR           =                   ;
+OPERATOR            =                   -
+OPERATOR            =                   -
+IDENTIFIER          =                   exponent
+SEPARATOR           =                   ;
+SEPARATOR           =                   }
+IDENTIFIER          =                   return
+REAL                =                   0
+SEPARATOR           =                   ;

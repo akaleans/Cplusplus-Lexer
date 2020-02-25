@@ -1,0 +1,8 @@
+    int exponent = 0;
+    float base, result = 1;
+    while (exponent >= 1) {
+        result *= base;
+        --exponent;
+    }
+    
+    return 0;
