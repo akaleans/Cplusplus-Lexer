@@ -13,8 +13,10 @@
 int main(int argc, char **argv){
 
 	std::ifstream fin;
+	bool appInput = false;
 
 	if (argc > 1) {
+		appInput = true;
 		int i = 0;
 		std::vector<Lexer> lexers;
 		while (i < argc) {
@@ -36,6 +38,7 @@ int main(int argc, char **argv){
 		std::cout << "Enter the number of files you wish to parse (Press 0 to run base sample files): ";
 		std::cin >> num;
 		if (num > 0) {
+			appInput = true;
 			std::vector<Lexer> lexers;
 			for(int i = 0; i < num; ++i) {
 				std::string tempFile;
@@ -54,7 +57,7 @@ int main(int argc, char **argv){
 			}
 		}
 	}
-	else {
+	else if(!appInput){
 		fin.open("sample1.txt");
 		std::stringstream buffer1, buffer2, buffer3;
 		buffer1 << fin.rdbuf();
