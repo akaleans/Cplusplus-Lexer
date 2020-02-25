@@ -19,7 +19,7 @@ int main(int argc, char **argv){
 		appInput = true;
 		int i = 0;
 		std::vector<Lexer> lexers;
-		while (i < argc) {
+		while (i < argc-1) {
 			fin.open(argv[i+1]);
 			std::stringstream tempBuffer;
 			tempBuffer << fin.rdbuf();
@@ -57,7 +57,7 @@ int main(int argc, char **argv){
 			}
 		}
 	}
-	else if(!appInput){
+	if(!appInput){
 		fin.open("sample1.txt");
 		std::stringstream buffer1, buffer2, buffer3;
 		buffer1 << fin.rdbuf();
