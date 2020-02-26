@@ -1,2 +1,6 @@
 ﻿  main.cpp
+  Lexer.cpp
+c:\users\khalen stensby\source\repos\lexer\lexer\lexer.cpp(56): warning C4018: '<': signed/unsigned mismatch
+c:\users\khalen stensby\source\repos\lexer\lexer\lexer.cpp(129): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   lexer.vcxproj -> C:\Users\Khalen Stensby\source\repos\lexer\Debug\lexer.exe
